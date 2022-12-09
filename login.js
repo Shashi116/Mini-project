@@ -7,7 +7,8 @@ function valLogin(){
     let result = re.test(val_email);
     if(result){
        //continue for login
-       document.write("loginSuccessful");
+       window.location.assign("profilepage.html");
+
     }
     else{
         alert("Enter valid mail ");       

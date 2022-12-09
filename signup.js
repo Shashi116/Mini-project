@@ -17,7 +17,7 @@ function valsignup(){
     val_pass.style.borderColor='red';}
     
     if(val_cpass==val_pass){
-        document.write("loginSuccessful");
+        window.location.assign("profilepage.html");;
     }
     if(val_cpass!=val_pass){alert("Confirm password must be same as password ");}
     

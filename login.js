@@ -1,8 +1,5 @@
 
 
-
-//document.getElementById("login").addEventListener("click", Login);
-
 function valLogin(){
     var val_email =   document.getElementById("email").value;
     var val_pass=   document.getElementById("password").value;
@@ -10,10 +7,10 @@ function valLogin(){
     let result = re.test(val_email);
     if(result){
        //continue for login
+       document.write("loginSuccessful");
     }
     else{
-        alert("Enter valid mail ");
-        //console.log("fail");
+        alert("Enter valid mail ");       
     }
     if(val_email == "")
    {alert("email field can't be empty")
@@ -21,8 +18,5 @@ function valLogin(){
 
     else if(val_pass.value == "")
    {alert("password field can't be empty" );
-    val_pass.style.borderColor='red';}
-
-    else{}
-    document.write("loginSuccessful");
+    val_pass.style.borderColor='red';}  
 }
